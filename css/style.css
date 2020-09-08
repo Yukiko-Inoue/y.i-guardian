@@ -1,0 +1,273 @@
+/*全体*/
+/*ウィンドウ幅480px以上*/
+@media screen and ( min-width:480px )
+{
+    body{
+        width: 980px;
+        margin: 0 auto;
+        overflow-x: hidden;
+    }
+}
+/*ウィンドウ幅479px以下*/
+@media screen and ( max-width:479px )
+{
+    body{
+        width: 480px;
+        margin: 0 auto;
+    }
+}
+
+body{
+    font-size: 14px;
+}
+/*ヘッダー*/
+header p{
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+/*ナビ*/
+nav{
+    background-color: #001754;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    color: white;
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+nav li{
+    width: 245px;
+    height: 30px;
+    text-align: center;
+    padding-top: 5px;
+    border-right: 1px solid white;
+}
+nav li.nav1{
+    border-left: 1px solid white;
+}
+nav li:hover{
+    color: #001754;
+    background-color: #ffffff;
+}
+    /*ウィンドウ幅480px以上*/
+    @media screen and ( min-width:480px )
+    {
+        nav{
+            margin:0 -100% 0 -100%;
+            padding:0 100% 0 100%;
+        }
+    }
+    /*ウィンドウ幅479px以下*/
+    @media screen and ( max-width:479px )
+    {
+        header p{
+            font-size: 12px;
+        }
+        nav{
+            width: 480px;
+        }
+        nav li{
+            width: 120px;
+        }
+    }
+
+/*メイン*/
+main{
+    width: 700px;
+}
+/*セクション１*/
+h1{
+    color: white;
+    font-size: 24px;
+    background-color: #001754;
+    padding-left: 15px;
+    margin-top: 30px;
+}
+.cont{
+    display: flex;
+    justify-content: space-between;
+}
+.cont-sab{
+    width: 220px;
+}
+.cont-title{
+    text-align: center;
+    font-weight: bold;
+}
+
+/*セクション２*/
+h2{
+    color: #001754;
+    font-size: 20px;
+    border-bottom: 2px solid #001754;
+}
+.sec2-cont span{
+    font-weight: bold;
+}
+.br{
+    margin: 0;
+}
+
+/*ウィンドウ幅479px以下*/
+@media screen and ( max-width:479px )
+{
+    main{
+        width: 480px;
+    }
+    .cont{
+        display: flex;
+        flex-direction: column;
+    }
+    .cont-sab{
+        width: 350px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .cont-img{
+        width: 350px;
+        height: auto;
+    }
+    .sec2-cont p{
+        margin-left: 5px;
+    }
+}
+
+/*フォーム*/
+.form{
+    width: 700px;
+    border-collapse: collapse;
+}
+.form-1{
+    height: 50px;
+}
+.form-text{
+    height: 200px;
+}
+th{
+    width: 200px;
+    text-align: left;
+    padding-left: 15px;
+    background-color: #cccccc;
+}
+td{
+    background-color: #ffffff;
+    width: 500px;
+    padding-left: 20px;
+}
+textarea{
+    width: 400px;
+    height: 150px;
+    box-shadow: -1px -1px gray;
+}
+.submit{
+    margin-top:20px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+#submit{
+    box-shadow: 1px 1px ;
+}
+
+/*フォームの枠線（ウィンドウ幅480px以上）*/
+@media screen and ( min-width:480px )
+{
+    th,td{
+        border: 1px solid #cccccc;
+    }
+    th{
+        border-bottom: 1px solid #ffffff;
+    }
+    .form-text th{
+        border-bottom: 1px solid #cccccc;
+    }
+    
+}
+
+/*ウィンドウ幅479px以下*/
+@media screen and ( max-width:479px )
+{
+    /*フォーム*/
+    .form{
+        width: 480px;
+    }
+    th,td{
+        display: block;
+        width: 455px;
+        border: 1px solid #cccccc;
+    }
+    .form-1 th{
+        width: 463px;
+        height: 30px;
+    }
+    .form-1 td{
+        width: 459px;
+        padding: 10px;
+    }
+    .form-text th{
+        width: 463px;
+        height: 30px;
+    }
+    .form-text td{
+        width: 458px;
+        padding: 10px;
+    }
+}
+
+/*サイド*/
+aside{
+    margin-top: 20px;
+}
+.side{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+    /*ウィンドウ幅479px以下*/
+    @media screen and ( max-width:479px )
+    {
+        .side{
+            margin-left: 23%;
+            margin-top: 10px;
+        }
+    }
+
+/*レイアウト（ウィンドウ幅480px以上）*/
+@media screen and ( min-width:480px )
+{
+    .contents{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+/*フッター*/
+.footer-border{
+    border: 1px solid #001754;
+}
+.footer-p{
+    color: white;
+    font-size: 12px;
+    background-color: #001754;
+    text-align: center;
+}
+    /*ウィンドウ幅480px以上*/
+    @media screen and ( min-width:480px )
+    {
+        .footer-border{
+            margin:0 -100% 0 -100%;
+            padding:0 100% 0 100%;
+        }
+        .footer-p{
+            margin:0 -100% 0 -100%;
+            padding:0 100% 0 100%;
+        }
+    }
+    /*ウィンドウ幅479px以下*/
+    @media screen and ( max-width:479px )
+    {
+        .footer-logo{
+            margin-left: 23%;
+        }
+    }
